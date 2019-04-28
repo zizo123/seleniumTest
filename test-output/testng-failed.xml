@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" guice-stage="DEVELOPMENT" name="Failed suite [SmokeSuite]" parallel="methods">
+  <test thread-count="2" name="ParallelTest(failed)" parallel="methods">
+    <classes>
+      <class name="grid.TestWebsite">
+        <methods>
+          <include name="test_01"/>
+          <include name="beforeMethod"/>
+          <include name="test_02"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- grid.TestWebsite -->
+    </classes>
+  </test> <!-- ParallelTest(failed) -->
+</suite> <!-- Failed suite [SmokeSuite] -->
