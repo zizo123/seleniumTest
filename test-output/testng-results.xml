@@ -1,70 +1,69 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="2" ignored="0" total="2" passed="0">
+<testng-results skipped="2" failed="0" ignored="0" total="2" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="SmokeSuite" duration-ms="125740" started-at="2019-04-28T09:33:18Z" finished-at="2019-04-28T09:35:23Z">
+  <suite name="SmokeSuite" duration-ms="1760" started-at="2019-05-12T20:59:30Z" finished-at="2019-05-12T20:59:32Z">
     <groups>
     </groups>
-    <test name="ParallelTest" duration-ms="125740" started-at="2019-04-28T09:33:18Z" finished-at="2019-04-28T09:35:23Z">
+    <test name="ParallelTest 3" duration-ms="1760" started-at="2019-05-12T20:59:30Z" finished-at="2019-05-12T20:59:32Z">
       <class name="grid.TestWebsite">
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:grid.TestWebsite@6a41eaa2]" name="beforeMethod" is-config="true" duration-ms="6266" started-at="2019-04-28T09:33:18Z" finished-at="2019-04-28T09:33:24Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:grid.TestWebsite@6a41eaa2]" name="beforeMethod" is-config="true" duration-ms="6274" started-at="2019-04-28T09:33:18Z" finished-at="2019-04-28T09:33:24Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="FAIL" signature="test_02()[pri:0, instance:grid.TestWebsite@6a41eaa2]" name="test_02" duration-ms="117874" started-at="2019-04-28T09:33:24Z" finished-at="2019-04-28T09:35:22Z">
-          <exception class="org.openqa.selenium.NoSuchWindowException">
+        <test-method status="FAIL" signature="beforeMethod(java.lang.String)[pri:0, instance:grid.TestWebsite@7d9d1a19]" name="beforeMethod" is-config="true" duration-ms="1656" started-at="2019-05-12T20:59:30Z" finished-at="2019-05-12T20:59:32Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.WebDriverException">
             <message>
-              <![CDATA[no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=73.0.3683.103)
-  (Driver info: chromedriver=73.0.3683.68 (47787ec04b6e38e22703e856e101e840b65afe72),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
+              <![CDATA[Error forwarding the new session cannot find : Capabilities {browserName: MicrosoftEdge, platformName: windows}
+Command duration or timeout: 200 milliseconds
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-P1OV4AS', ip: '172.28.23.65', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_201'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 73.0.3683.68 (47787ec04b6e3..., userDataDir: C:\Users\OZ\AppData\Local\T...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:53250}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 73.0.3683.103, webStorageEnabled: true}
-Session ID: 6d119b1d51c09cc4197b61f04ab32624
-*** Element info: {Using=xpath, value=//div[@class='w3-bar-block']//a[@class='w3-bar-item w3-button'][contains(text(),'Learn CSS')]}]]>
+System info: host: 'DESKTOP-P1OV4AS', ip: '192.168.1.7', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_201'
+Driver info: driver.version: RemoteWebDriver]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=73.0.3683.103)
-  (Driver info: chromedriver=73.0.3683.68 (47787ec04b6e38e22703e856e101e840b65afe72),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
+              <![CDATA[org.openqa.selenium.WebDriverException: Error forwarding the new session cannot find : Capabilities {browserName: MicrosoftEdge, platformName: windows}
+Command duration or timeout: 200 milliseconds
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-P1OV4AS', ip: '172.28.23.65', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_201'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 73.0.3683.68 (47787ec04b6e3..., userDataDir: C:\Users\OZ\AppData\Local\T...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:53250}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 73.0.3683.103, webStorageEnabled: true}
-Session ID: 6d119b1d51c09cc4197b61f04ab32624
-*** Element info: {Using=xpath, value=//div[@class='w3-bar-block']//a[@class='w3-bar-item w3-button'][contains(text(),'Learn CSS')]}
+System info: host: 'DESKTOP-P1OV4AS', ip: '192.168.1.7', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_201'
+Driver info: driver.version: RemoteWebDriver
 at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
 at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
 at java.lang.reflect.Constructor.newInstance(Unknown Source)
 at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
 at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
-at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
-at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
-at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.JsonWireProtocolResponse.lambda$errorHandler$0(JsonWireProtocolResponse.java:54)
+at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+at java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
+at java.util.Spliterators$ArraySpliterator.tryAdvance(Unknown Source)
+at java.util.stream.ReferencePipeline.forEachWithCancel(Unknown Source)
+at java.util.stream.AbstractPipeline.copyIntoWithCancel(Unknown Source)
+at java.util.stream.AbstractPipeline.copyInto(Unknown Source)
+at java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
+at java.util.stream.FindOps$FindOp.evaluateSequential(Unknown Source)
+at java.util.stream.AbstractPipeline.evaluate(Unknown Source)
+at java.util.stream.ReferencePipeline.findFirst(Unknown Source)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-at grid.TestWebsite.test_02(TestWebsite.java:27)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:144)
+at grid.BaseClass.beforeMethod(BaseClass.java:53)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
 at java.lang.reflect.Method.invoke(Unknown Source)
 at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:523)
 at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
 at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
 at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
@@ -72,62 +71,303 @@ at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
 at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
 at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
 at java.lang.Thread.run(Unknown Source)
+Caused by: org.openqa.grid.common.exception.GridException: Error forwarding the new session cannot find : Capabilities {browserName: MicrosoftEdge, platformName: windows}
+at org.openqa.grid.web.servlet.handler.RequestHandler.process(RequestHandler.java:118)
+at org.openqa.grid.web.servlet.DriverServlet.process(DriverServlet.java:85)
+at org.openqa.grid.web.servlet.DriverServlet.doPost(DriverServlet.java:69)
+at javax.servlet.http.HttpServlet.service(HttpServlet.java:707)
+at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+at org.seleniumhq.jetty9.servlet.ServletHolder.handle(ServletHolder.java:865)
+at org.seleniumhq.jetty9.servlet.ServletHandler.doHandle(ServletHandler.java:535)
+at org.seleniumhq.jetty9.server.handler.ScopedHandler.handle(ScopedHandler.java:146)
+at org.seleniumhq.jetty9.security.SecurityHandler.handle(SecurityHandler.java:548)
+at org.seleniumhq.jetty9.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+at org.seleniumhq.jetty9.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:257)
+at org.seleniumhq.jetty9.server.session.SessionHandler.doHandle(SessionHandler.java:1595)
+at org.seleniumhq.jetty9.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:255)
+at org.seleniumhq.jetty9.server.handler.ContextHandler.doHandle(ContextHandler.java:1340)
+at org.seleniumhq.jetty9.server.handler.ScopedHandler.nextScope(ScopedHandler.java:203)
+at org.seleniumhq.jetty9.servlet.ServletHandler.doScope(ServletHandler.java:473)
+at org.seleniumhq.jetty9.server.session.SessionHandler.doScope(SessionHandler.java:1564)
+at org.seleniumhq.jetty9.server.handler.ScopedHandler.nextScope(ScopedHandler.java:201)
+at org.seleniumhq.jetty9.server.handler.ContextHandler.doScope(ContextHandler.java:1242)
+at org.seleniumhq.jetty9.server.handler.ScopedHandler.handle(ScopedHandler.java:144)
+at org.seleniumhq.jetty9.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+at org.seleniumhq.jetty9.server.Server.handle(Server.java:503)
+at org.seleniumhq.jetty9.server.HttpChannel.handle(HttpChannel.java:364)
+at org.seleniumhq.jetty9.server.HttpConnection.onFillable(HttpConnection.java:260)
+at org.seleniumhq.jetty9.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:305)
+at org.seleniumhq.jetty9.io.FillInterest.fillable(FillInterest.java:103)
+at org.seleniumhq.jetty9.io.ChannelEndPoint$2.run(ChannelEndPoint.java:118)
+at org.seleniumhq.jetty9.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:333)
+at org.seleniumhq.jetty9.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:310)
+at org.seleniumhq.jetty9.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:168)
+at org.seleniumhq.jetty9.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:126)
+at org.seleniumhq.jetty9.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:366)
+at org.seleniumhq.jetty9.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:765)
+at org.seleniumhq.jetty9.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:683)
+... 1 more
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="FAIL" signature="beforeMethod(java.lang.String)[pri:0, instance:grid.TestWebsite@7d9d1a19]" name="beforeMethod" is-config="true" duration-ms="1655" started-at="2019-05-12T20:59:30Z" finished-at="2019-05-12T20:59:32Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[Error forwarding the new session cannot find : Capabilities {browserName: MicrosoftEdge, platformName: windows}
+Command duration or timeout: 200 milliseconds
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-P1OV4AS', ip: '192.168.1.7', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_201'
+Driver info: driver.version: RemoteWebDriver]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: Error forwarding the new session cannot find : Capabilities {browserName: MicrosoftEdge, platformName: windows}
+Command duration or timeout: 200 milliseconds
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-P1OV4AS', ip: '192.168.1.7', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_201'
+Driver info: driver.version: RemoteWebDriver
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+at java.lang.reflect.Constructor.newInstance(Unknown Source)
+at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+at org.openqa.selenium.remote.JsonWireProtocolResponse.lambda$errorHandler$0(JsonWireProtocolResponse.java:54)
+at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+at java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
+at java.util.Spliterators$ArraySpliterator.tryAdvance(Unknown Source)
+at java.util.stream.ReferencePipeline.forEachWithCancel(Unknown Source)
+at java.util.stream.AbstractPipeline.copyIntoWithCancel(Unknown Source)
+at java.util.stream.AbstractPipeline.copyInto(Unknown Source)
+at java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
+at java.util.stream.FindOps$FindOp.evaluateSequential(Unknown Source)
+at java.util.stream.AbstractPipeline.evaluate(Unknown Source)
+at java.util.stream.ReferencePipeline.findFirst(Unknown Source)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:144)
+at grid.BaseClass.beforeMethod(BaseClass.java:53)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:523)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+at java.lang.Thread.run(Unknown Source)
+Caused by: org.openqa.grid.common.exception.GridException: Error forwarding the new session cannot find : Capabilities {browserName: MicrosoftEdge, platformName: windows}
+at org.openqa.grid.web.servlet.handler.RequestHandler.process(RequestHandler.java:118)
+at org.openqa.grid.web.servlet.DriverServlet.process(DriverServlet.java:85)
+at org.openqa.grid.web.servlet.DriverServlet.doPost(DriverServlet.java:69)
+at javax.servlet.http.HttpServlet.service(HttpServlet.java:707)
+at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+at org.seleniumhq.jetty9.servlet.ServletHolder.handle(ServletHolder.java:865)
+at org.seleniumhq.jetty9.servlet.ServletHandler.doHandle(ServletHandler.java:535)
+at org.seleniumhq.jetty9.server.handler.ScopedHandler.handle(ScopedHandler.java:146)
+at org.seleniumhq.jetty9.security.SecurityHandler.handle(SecurityHandler.java:548)
+at org.seleniumhq.jetty9.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+at org.seleniumhq.jetty9.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:257)
+at org.seleniumhq.jetty9.server.session.SessionHandler.doHandle(SessionHandler.java:1595)
+at org.seleniumhq.jetty9.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:255)
+at org.seleniumhq.jetty9.server.handler.ContextHandler.doHandle(ContextHandler.java:1340)
+at org.seleniumhq.jetty9.server.handler.ScopedHandler.nextScope(ScopedHandler.java:203)
+at org.seleniumhq.jetty9.servlet.ServletHandler.doScope(ServletHandler.java:473)
+at org.seleniumhq.jetty9.server.session.SessionHandler.doScope(SessionHandler.java:1564)
+at org.seleniumhq.jetty9.server.handler.ScopedHandler.nextScope(ScopedHandler.java:201)
+at org.seleniumhq.jetty9.server.handler.ContextHandler.doScope(ContextHandler.java:1242)
+at org.seleniumhq.jetty9.server.handler.ScopedHandler.handle(ScopedHandler.java:144)
+at org.seleniumhq.jetty9.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+at org.seleniumhq.jetty9.server.Server.handle(Server.java:503)
+at org.seleniumhq.jetty9.server.HttpChannel.handle(HttpChannel.java:364)
+at org.seleniumhq.jetty9.server.HttpConnection.onFillable(HttpConnection.java:260)
+at org.seleniumhq.jetty9.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:305)
+at org.seleniumhq.jetty9.io.FillInterest.fillable(FillInterest.java:103)
+at org.seleniumhq.jetty9.io.ChannelEndPoint$2.run(ChannelEndPoint.java:118)
+at org.seleniumhq.jetty9.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:333)
+at org.seleniumhq.jetty9.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:310)
+at org.seleniumhq.jetty9.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:168)
+at org.seleniumhq.jetty9.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:126)
+at org.seleniumhq.jetty9.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:366)
+at org.seleniumhq.jetty9.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:765)
+at org.seleniumhq.jetty9.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:683)
+... 1 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="SKIP" signature="test_02()[pri:0, instance:grid.TestWebsite@7d9d1a19]" name="test_02" duration-ms="0" started-at="2019-05-12T20:59:32Z" finished-at="2019-05-12T20:59:32Z">
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[Error forwarding the new session cannot find : Capabilities {browserName: MicrosoftEdge, platformName: windows}
+Command duration or timeout: 200 milliseconds
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-P1OV4AS', ip: '192.168.1.7', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_201'
+Driver info: driver.version: RemoteWebDriver]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: Error forwarding the new session cannot find : Capabilities {browserName: MicrosoftEdge, platformName: windows}
+Command duration or timeout: 200 milliseconds
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-P1OV4AS', ip: '192.168.1.7', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_201'
+Driver info: driver.version: RemoteWebDriver
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+at java.lang.reflect.Constructor.newInstance(Unknown Source)
+at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+at org.openqa.selenium.remote.JsonWireProtocolResponse.lambda$errorHandler$0(JsonWireProtocolResponse.java:54)
+at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+at java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
+at java.util.Spliterators$ArraySpliterator.tryAdvance(Unknown Source)
+at java.util.stream.ReferencePipeline.forEachWithCancel(Unknown Source)
+at java.util.stream.AbstractPipeline.copyIntoWithCancel(Unknown Source)
+at java.util.stream.AbstractPipeline.copyInto(Unknown Source)
+at java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
+at java.util.stream.FindOps$FindOp.evaluateSequential(Unknown Source)
+at java.util.stream.AbstractPipeline.evaluate(Unknown Source)
+at java.util.stream.ReferencePipeline.findFirst(Unknown Source)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:144)
+at grid.BaseClass.beforeMethod(BaseClass.java:53)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:523)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+at java.lang.Thread.run(Unknown Source)
+Caused by: org.openqa.grid.common.exception.GridException: Error forwarding the new session cannot find : Capabilities {browserName: MicrosoftEdge, platformName: windows}
+at org.openqa.grid.web.servlet.handler.RequestHandler.process(RequestHandler.java:118)
+at org.openqa.grid.web.servlet.DriverServlet.process(DriverServlet.java:85)
+at org.openqa.grid.web.servlet.DriverServlet.doPost(DriverServlet.java:69)
+at javax.servlet.http.HttpServlet.service(HttpServlet.java:707)
+at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+at org.seleniumhq.jetty9.servlet.ServletHolder.handle(ServletHolder.java:865)
+at org.seleniumhq.jetty9.servlet.ServletHandler.doHandle(ServletHandler.java:535)
+at org.seleniumhq.jetty9.server.handler.ScopedHandler.handle(ScopedHandler.java:146)
+at org.seleniumhq.jetty9.security.SecurityHandler.handle(SecurityHandler.java:548)
+at org.seleniumhq.jetty9.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+at org.seleniumhq.jetty9.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:257)
+at org.seleniumhq.jetty9.server.session.SessionHandler.doHandle(SessionHandler.java:1595)
+at org.seleniumhq.jetty9.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:255)
+at org.seleniumhq.jetty9.server.handler.ContextHandler.doHandle(ContextHandler.java:1340)
+at org.seleniumhq.jetty9.server.handler.ScopedHandler.nextScope(ScopedHandler.java:203)
+at org.seleniumhq.jetty9.servlet.ServletHandler.doScope(ServletHandler.java:473)
+at org.seleniumhq.jetty9.server.session.SessionHandler.doScope(SessionHandler.java:1564)
+at org.seleniumhq.jetty9.server.handler.ScopedHandler.nextScope(ScopedHandler.java:201)
+at org.seleniumhq.jetty9.server.handler.ContextHandler.doScope(ContextHandler.java:1242)
+at org.seleniumhq.jetty9.server.handler.ScopedHandler.handle(ScopedHandler.java:144)
+at org.seleniumhq.jetty9.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+at org.seleniumhq.jetty9.server.Server.handle(Server.java:503)
+at org.seleniumhq.jetty9.server.HttpChannel.handle(HttpChannel.java:364)
+at org.seleniumhq.jetty9.server.HttpConnection.onFillable(HttpConnection.java:260)
+at org.seleniumhq.jetty9.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:305)
+at org.seleniumhq.jetty9.io.FillInterest.fillable(FillInterest.java:103)
+at org.seleniumhq.jetty9.io.ChannelEndPoint$2.run(ChannelEndPoint.java:118)
+at org.seleniumhq.jetty9.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:333)
+at org.seleniumhq.jetty9.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:310)
+at org.seleniumhq.jetty9.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:168)
+at org.seleniumhq.jetty9.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:126)
+at org.seleniumhq.jetty9.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:366)
+at org.seleniumhq.jetty9.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:765)
+at org.seleniumhq.jetty9.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:683)
+... 1 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_02 -->
-        <test-method status="FAIL" signature="test_01()[pri:0, instance:grid.TestWebsite@6a41eaa2]" name="test_01" duration-ms="118815" started-at="2019-04-28T09:33:24Z" finished-at="2019-04-28T09:35:23Z">
-          <exception class="org.openqa.selenium.NoSuchWindowException">
+        <test-method status="SKIP" signature="test_01()[pri:0, instance:grid.TestWebsite@7d9d1a19]" name="test_01" duration-ms="0" started-at="2019-05-12T20:59:32Z" finished-at="2019-05-12T20:59:32Z">
+          <exception class="org.openqa.selenium.WebDriverException">
             <message>
-              <![CDATA[no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=73.0.3683.103)
-  (Driver info: chromedriver=73.0.3683.68 (47787ec04b6e38e22703e856e101e840b65afe72),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
+              <![CDATA[Error forwarding the new session cannot find : Capabilities {browserName: MicrosoftEdge, platformName: windows}
+Command duration or timeout: 200 milliseconds
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-P1OV4AS', ip: '172.28.23.65', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_201'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 73.0.3683.68 (47787ec04b6e3..., userDataDir: C:\Users\OZ\AppData\Local\T...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:53250}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 73.0.3683.103, webStorageEnabled: true}
-Session ID: 6d119b1d51c09cc4197b61f04ab32624
-*** Element info: {Using=xpath, value=//div[@class='w3-bar w3-left']//a[@class='w3-bar-item w3-button'][contains(text(),'HTML')]}]]>
+System info: host: 'DESKTOP-P1OV4AS', ip: '192.168.1.7', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_201'
+Driver info: driver.version: RemoteWebDriver]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=73.0.3683.103)
-  (Driver info: chromedriver=73.0.3683.68 (47787ec04b6e38e22703e856e101e840b65afe72),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
+              <![CDATA[org.openqa.selenium.WebDriverException: Error forwarding the new session cannot find : Capabilities {browserName: MicrosoftEdge, platformName: windows}
+Command duration or timeout: 200 milliseconds
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-P1OV4AS', ip: '172.28.23.65', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_201'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 73.0.3683.68 (47787ec04b6e3..., userDataDir: C:\Users\OZ\AppData\Local\T...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:53250}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 73.0.3683.103, webStorageEnabled: true}
-Session ID: 6d119b1d51c09cc4197b61f04ab32624
-*** Element info: {Using=xpath, value=//div[@class='w3-bar w3-left']//a[@class='w3-bar-item w3-button'][contains(text(),'HTML')]}
+System info: host: 'DESKTOP-P1OV4AS', ip: '192.168.1.7', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_201'
+Driver info: driver.version: RemoteWebDriver
 at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
 at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
 at java.lang.reflect.Constructor.newInstance(Unknown Source)
 at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
 at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
-at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
-at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
-at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.JsonWireProtocolResponse.lambda$errorHandler$0(JsonWireProtocolResponse.java:54)
+at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+at java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
+at java.util.Spliterators$ArraySpliterator.tryAdvance(Unknown Source)
+at java.util.stream.ReferencePipeline.forEachWithCancel(Unknown Source)
+at java.util.stream.AbstractPipeline.copyIntoWithCancel(Unknown Source)
+at java.util.stream.AbstractPipeline.copyInto(Unknown Source)
+at java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
+at java.util.stream.FindOps$FindOp.evaluateSequential(Unknown Source)
+at java.util.stream.AbstractPipeline.evaluate(Unknown Source)
+at java.util.stream.ReferencePipeline.findFirst(Unknown Source)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-at grid.TestWebsite.test_01(TestWebsite.java:19)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:144)
+at grid.BaseClass.beforeMethod(BaseClass.java:53)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
 at java.lang.reflect.Method.invoke(Unknown Source)
 at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:523)
 at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
 at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
 at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
@@ -135,17 +375,53 @@ at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
 at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
 at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
 at java.lang.Thread.run(Unknown Source)
+Caused by: org.openqa.grid.common.exception.GridException: Error forwarding the new session cannot find : Capabilities {browserName: MicrosoftEdge, platformName: windows}
+at org.openqa.grid.web.servlet.handler.RequestHandler.process(RequestHandler.java:118)
+at org.openqa.grid.web.servlet.DriverServlet.process(DriverServlet.java:85)
+at org.openqa.grid.web.servlet.DriverServlet.doPost(DriverServlet.java:69)
+at javax.servlet.http.HttpServlet.service(HttpServlet.java:707)
+at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+at org.seleniumhq.jetty9.servlet.ServletHolder.handle(ServletHolder.java:865)
+at org.seleniumhq.jetty9.servlet.ServletHandler.doHandle(ServletHandler.java:535)
+at org.seleniumhq.jetty9.server.handler.ScopedHandler.handle(ScopedHandler.java:146)
+at org.seleniumhq.jetty9.security.SecurityHandler.handle(SecurityHandler.java:548)
+at org.seleniumhq.jetty9.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+at org.seleniumhq.jetty9.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:257)
+at org.seleniumhq.jetty9.server.session.SessionHandler.doHandle(SessionHandler.java:1595)
+at org.seleniumhq.jetty9.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:255)
+at org.seleniumhq.jetty9.server.handler.ContextHandler.doHandle(ContextHandler.java:1340)
+at org.seleniumhq.jetty9.server.handler.ScopedHandler.nextScope(ScopedHandler.java:203)
+at org.seleniumhq.jetty9.servlet.ServletHandler.doScope(ServletHandler.java:473)
+at org.seleniumhq.jetty9.server.session.SessionHandler.doScope(SessionHandler.java:1564)
+at org.seleniumhq.jetty9.server.handler.ScopedHandler.nextScope(ScopedHandler.java:201)
+at org.seleniumhq.jetty9.server.handler.ContextHandler.doScope(ContextHandler.java:1242)
+at org.seleniumhq.jetty9.server.handler.ScopedHandler.handle(ScopedHandler.java:144)
+at org.seleniumhq.jetty9.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+at org.seleniumhq.jetty9.server.Server.handle(Server.java:503)
+at org.seleniumhq.jetty9.server.HttpChannel.handle(HttpChannel.java:364)
+at org.seleniumhq.jetty9.server.HttpConnection.onFillable(HttpConnection.java:260)
+at org.seleniumhq.jetty9.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:305)
+at org.seleniumhq.jetty9.io.FillInterest.fillable(FillInterest.java:103)
+at org.seleniumhq.jetty9.io.ChannelEndPoint$2.run(ChannelEndPoint.java:118)
+at org.seleniumhq.jetty9.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:333)
+at org.seleniumhq.jetty9.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:310)
+at org.seleniumhq.jetty9.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:168)
+at org.seleniumhq.jetty9.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:126)
+at org.seleniumhq.jetty9.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:366)
+at org.seleniumhq.jetty9.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:765)
+at org.seleniumhq.jetty9.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:683)
+... 1 more
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_01 -->
-        <test-method status="PASS" signature="afterClass()[pri:0, instance:grid.TestWebsite@6a41eaa2]" name="afterClass" is-config="true" duration-ms="586" started-at="2019-04-28T09:35:23Z" finished-at="2019-04-28T09:35:23Z">
+        <test-method status="SKIP" signature="afterClass()[pri:0, instance:grid.TestWebsite@7d9d1a19]" name="afterClass" is-config="true" duration-ms="0" started-at="2019-05-12T20:59:32Z" finished-at="2019-05-12T20:59:32Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
       </class> <!-- grid.TestWebsite -->
-    </test> <!-- ParallelTest -->
+    </test> <!-- ParallelTest 3 -->
   </suite> <!-- SmokeSuite -->
 </testng-results>

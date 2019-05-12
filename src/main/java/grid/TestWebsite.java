@@ -12,21 +12,21 @@ public class TestWebsite extends BaseClass{
 
 	@Test
 	public void test_01() throws InterruptedException {
-		driver.get("https://www.w3schools.com/");
+		getDriver().get("https://www.w3schools.com/");
 		Thread.sleep(1000);
-		driver.findElement(By.xpath(DIV_CSS)).click();
+		getDriver().findElement(By.xpath(DIV_CSS)).click();
 		Thread.sleep(1000);
-		driver.findElement(By.xpath(DIV_HTML)).click();
+		getDriver().findElement(By.xpath(DIV_HTML)).click();
 		Thread.sleep(1000);
 	}
 	
 	@Test
 	public void test_02() throws InterruptedException {
-		driver.get("https://www.w3schools.com/");
+		getDriver().get("https://www.w3schools.com/");
 		Thread.sleep(1000);
-		driver.findElement(By.xpath(DIV_CSS)).click();
+		getDriver().findElement(By.xpath(DIV_CSS)).click();
 		Thread.sleep(1000);
-		driver.findElement(By.xpath(DIV_HTML)).click();
+		getDriver().findElement(By.xpath(DIV_HTML)).click();
 		Thread.sleep(1000);
 	}
 }

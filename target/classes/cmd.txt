@@ -1,0 +1,8 @@
+
+java -Dwebdriver.chrome.driver="chromedriver.exe" -jar selenium-server-standalone-3.141.59.jar -role webdriver -hub http://localhost:4444/grid/register -port 5561 -browser browserName="chrome",maxInstances=1,maxSession=2
+java -Dwebdriver.gecko.driver="geckodriver.exe" -jar selenium-server-standalone-3.141.59.jar -role webdriver -hub http://localhost:4444/grid/register -port 5563 -browser browserName="firefox",maxInstances=1,maxSession=2
+java -Dwebdriver.ie.driver="MicrosoftWebDriver.exe" -jar selenium-server-standalone-3.141.59.jar -role webdriver -hub http://localhost:4444/grid/register -port 5565 -browser browserName="edge",maxInstances=1,maxSession=2
+
+java -jar selenium-server-standalone-3.141.59.jar -role hub -hubConfig hubconfig.json
+
+java -Dwebdriver.chrome.driver="chromedriver.exe" -Dwebdriver.ie.driver="MicrosoftWebDriver.exe" -Dwebdriver.gecko.driver="geckodriver.exe" -jar selenium-server-standalone-3.141.59.jar -role node -nodeConfig mynodes.json

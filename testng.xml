@@ -2,14 +2,25 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="SmokeSuite" parallel="methods" thread-count="2">
 
-<!-- 	<listeners>
-		<listener class-name="Listeners.Listener"/>
-	</listeners>-->
-	
-	<test name="ParallelTest">
+	<!-- <listeners> <listener class-name="Listeners.Listener"/> </listeners> -->
+	<test name="ParallelTest 3">
+		<parameter name="myBrowser" value="edge" />
 		<classes>
 			<class name="grid.TestWebsite" />
 		</classes>
 	</test>
+<!-- 	<test name="ParallelTest 1"> -->
+<!-- 		<parameter name="myBrowser" value="chrome" /> -->
+<!-- 		<classes> -->
+<!-- 			<class name="grid.TestWebsite" /> -->
+<!-- 		</classes> -->
+<!-- 	</test> -->
+
+	<!-- <test name="ParallelTest 2"> -->
+	<!-- <parameter name="myBrowser" value="firefox" /> -->
+	<!-- <classes> -->
+	<!-- <class name="grid.TestWebsite" /> -->
+	<!-- </classes> -->
+	<!-- </test> -->
 
 </suite>
