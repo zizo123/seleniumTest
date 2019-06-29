@@ -1,0 +1,35 @@
+
+A Supplier is used when you want to generate or supply values without taking any input.
+
+A Consumer when you want to do something with a parameter but not return anything. 
+
+A Predicate is often used when filtering or matching.
+
+A Function is responsible for turning one parameter into a value of a potentially different type and returning it.
+
+UnaryOperator(special case of Function). Requires all type parameters to be the same type. It transforms its value into one of the same type. 
+
+USING COMMON TERMINAL OPERATIONS : 
+You can perform a terminal operation without any intermediate operations but not the other way around. 
+The terminal operation must be right before the semicolon.  
+Should be one operation.
+
+	allMatch()/anyMatch()/noneMatch()/collect()/count()/findAny()/findFirst()/forEach()/min()/max() /reduce()
+	
+USING COMMON INTERMEDIATE OPERATIONS : 
+they deal with infinite streams simply by returning an infinite stream.
+
+	filter()/distinct()/limit()/ skip() / flatMap() /map()/sorted() /peek() 
+
+PUTTING TOGETHER THE PIPELINE :
+Streams allow you to use chaining and express what you want to accomplish rather than how to do so. 
+
+String::length <==>  x -> x.length().
+
+SourceStream  ToCreateStream				ToCreateDoubleStream				ToCreateIntStream				ToCreateLongStream
+Stream 	      map (Function)				mapToDouble (ToDoubleFunction)		mapToInt (ToDoubleFunction)		mapToLong (ToLongFunction)
+DoubleStream  mapToObj (DoubleFunction) 	map (DoubleUnaryOperator)			mapToInt (DoubleToIntFunction)	mapToLong (DoubleToLongFunction)
+IntStream 	  mapToObj (IntFunction)		mapToDouble (IntToDoubleFunction)	map (IntUnaryOperator)			mapToLong (IntToLongFunction)
+LongStream	  mapToObj (LongFunction)		mapToDouble (LongToDoubleFunction)	mapToInt (LongToIntFunction)	map (LongUnaryOperator)
+
+You can use a Collector to transform a stream into a traditional collection. You can even group fields to create a complex map in one line.

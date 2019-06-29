@@ -1,0 +1,2 @@
+Reflexion allows you to have information about classes and component inside of classes while your 
+program is running and you can modify them on sight.
